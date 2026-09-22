@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Bisnis Saya</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 20px; padding: 0; }
+        header { background: #1b365d; color: white; padding: 15px; text-align: center; }
+        nav { background: #333; padding: 10px; text-align: center; }
+        nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
+        main { margin-top: 20px; }
+        section { background: #f9f9f9; padding: 20px; margin-bottom: 20px; border-radius: 5px; }
+        form div { margin-bottom: 12px; }
+        label { display: block; font-weight: bold; margin-bottom: 5px; }
+        input[type="text"], input[type="email"], input[type="date"] { width: 100%; padding: 8px; box-sizing: border-box; }
+        button { background: #1b365d; color: white; padding: 10px 20px; border: none; cursor: pointer; }
+        footer { background: #222; color: white; text-align: center; padding: 10px; margin-top: 20px; }
+    </style>
+</head>
+<body>
+
+    <!-- 1. Header -->
+    <header>
+        <h1>Website Bisnis Saya</h1>
+    </header>
+
+    <!-- 2. Navigasi -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- 3. Main Content -->
+    <main id="home">
+        
+        <!-- Section: Tentang Kami -->
+        <section id="about">
+            <h2>Tentang Kami</h2>
+            <p>Selamat datang di website bisnis kami. Kami menyediakan berbagai layanan profesional untuk membantu perkembangan bisnis Anda di era digital.</p>
+        </section>
+
+        <!-- Section: Form Kontak/Pendaftaran -->
+        <section id="contact">
+            <h2>Form Pendaftaran & Kontak Us</h2>
+            <p>Punya pertanyaan atau ingin bekerja sama? Silakan hubungi kami melalui form di bawah ini.</p>
+
+            <form action="#" method="POST">
+                <!-- Input Name -->
+                <div>
+                    <label for="nama">Nama Lengkap:</label>
+                    <input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda" required>
+                </div>
+
+                <!-- Input Email -->
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Masukkan email Anda" required>
+                </div>
+
+                <!-- Input Date -->
+                <div>
+                    <label for="tanggal">Tanggal Pertemuan / Konsultasi:</label>
+                    <input type="date" id="tanggal" name="tanggal">
+                </div>
+
+                <!-- Input Radio -->
+                <div>
+                    <label>Kategori Layanan:</label>
+                    <input type="radio" id="konsultasi" name="layanan" value="Konsultasi">
+                    <label for="konsultasi" style="display:inline;">Konsultasi Bisnis</label>
+                    
+                    <input type="radio" id="pemasaran" name="layanan" value="Pemasaran">
+                    <label for="pemasaran" style="display:inline;">Pemasaran Digital</label>
+                </div>
+
+                <!-- Input Checkbox -->
+                <div>
+                    <label>Persetujuan:</label>
+                    <input type="checkbox" id="setuju" name="setuju" required>
+                    <label for="setuju" style="display:inline;">Saya menyetujui syarat & ketentuan</label>
+                </div>
+
+                <!-- Button Submit -->
+                <div>
+                    <button type="submit">Kirim Pesan</button>
+                </div>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- 4. Footer -->
+    <footer>
+        <p>&copy; 2026 Website Bisnis Saya. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
